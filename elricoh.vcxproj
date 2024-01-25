@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f091e74c-099d-4d83-8abe-ef6dd61f8c0f}</ProjectGuid>
+    <RootNamespace>elricoh</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-window-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-window.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;sfml-window-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\kjiez\OneDrive\Desktop\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-audio.lib;sfml-window.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlackFadeTransition.cpp" />
+    <ClCompile Include="BossFight.cpp" />
+    <ClCompile Include="CAS3Night.cpp" />
+    <ClCompile Include="CBA.cpp" />
+    <ClCompile Include="CBADay.cpp" />
+    <ClCompile Include="CBARoom.cpp" />
+    <ClCompile Include="CBARoomDay.cpp" />
+    <ClCompile Include="CircleTransition.cpp" />
+    <ClCompile Include="CircTrans.cpp" />
+    <ClCompile Include="Crafting.cpp" />
+    <ClCompile Include="CutScene.cpp" />
+    <ClCompile Include="CutScene2.cpp" />
+    <ClCompile Include="DialogueBox.cpp" />
+    <ClCompile Include="elrico.cpp" />
+    <ClCompile Include="End.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="HealthCount.cpp" />
+    <ClCompile Include="HM2nd.cpp" />
+    <ClCompile Include="HM2ndNight.cpp" />
+    <ClCompile Include="HMDay.cpp" />
+    <ClCompile Include="HMNight.cpp" />
+    <ClCompile Include="HMRoom1.cpp" />
+    <ClCompile Include="HMRoom2.cpp" />
+    <ClCompile Include="HMRoom2Night.cpp" />
+    <ClCompile Include="HP.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="LoadingScreen.cpp" />
+    <ClCompile Include="MainGate.cpp" />
+    <ClCompile Include="MainGateNight.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="NPC.cpp" />
+    <ClCompile Include="OpenCourt.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="PlayerName.cpp" />
+    <ClCompile Include="Skylab.cpp" />
+    <ClCompile Include="SkylabNight.cpp" />
+    <ClCompile Include="SkylabRoom.cpp" />
+    <ClCompile Include="SKYLABROOMLAST.cpp" />
+    <ClCompile Include="SkylabRoomNight.cpp" />
+    <ClCompile Include="Startup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlackFadeTransition.h" />
+    <ClInclude Include="BossFight.h" />
+    <ClInclude Include="CAS3Night.h" />
+    <ClInclude Include="CBA.h" />
+    <ClInclude Include="CBADay.h" />
+    <ClInclude Include="CBARoom.h" />
+    <ClInclude Include="CBARoomDay.h" />
+    <ClInclude Include="CircleTransition.h" />
+    <ClInclude Include="CircTrans.h" />
+    <ClInclude Include="Crafting.h" />
+    <ClInclude Include="CutScene.h" />
+    <ClInclude Include="CutScene2.h" />
+    <ClInclude Include="DialogueBox.h" />
+    <ClInclude Include="End.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="HealthCount.h" />
+    <ClInclude Include="HM2nd.h" />
+    <ClInclude Include="HM2ndNight.h" />
+    <ClInclude Include="HMDay.h" />
+    <ClInclude Include="HMNight.h" />
+    <ClInclude Include="HMRoom1.h" />
+    <ClInclude Include="HMRoom2.h" />
+    <ClInclude Include="HMRoom2Night.h" />
+    <ClInclude Include="HP.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="LoadingScreen.h" />
+    <ClInclude Include="MainGate.h" />
+    <ClInclude Include="MainGateNight.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="NPC.h" />
+    <ClInclude Include="OpenCourt.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="PlayerName.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Skylab.h" />
+    <ClInclude Include="SkylabNight.h" />
+    <ClInclude Include="SkylabRoom.h" />
+    <ClInclude Include="SKYLABROOMLAST.h" />
+    <ClInclude Include="SkylabRoomNight.h" />
+    <ClInclude Include="Startup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="elricoh.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
